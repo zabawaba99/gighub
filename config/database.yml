@@ -82,4 +82,5 @@ production:
   <<: *default
   database: gighub_production
   username: gighub
+  url: <%= ENV['DATABASE_URL'] %>
   password: <%= ENV['GIGHUB_DATABASE_PASSWORD'] %>
